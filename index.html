@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de ejercicios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Aritmetica</h1>
+  <h3>Realiza los siguentes ejercicios:</h3>
+
+  <div class="config">
+    <label>
+      Dificultad:
+      <select id="dificultad">
+        <option value="1">Fácil</option>
+        <option value="2">Media</option>
+        <option value="3">Difícil</option>
+      </select>
+    </label>
+
+    <label>
+      Tipo:
+      <select id="tipo">
+        <option value="mixto">Mixto</option>
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+      </select>
+    </label>
+
+    <label>
+      Formato:
+      <select id="formato">
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+      </select>
+    </label>
+
+    <label>
+      Cantidad:
+      <input id="cantidad" type="number" min="1" max="100" value="21" />
+    </label>
+
+    <button id="generar">Generar ejercicios</button>
+  </div>
+
+  <div id="lista"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
