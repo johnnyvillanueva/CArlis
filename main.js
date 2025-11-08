@@ -11,7 +11,7 @@ function generarEjercicio(tipo, dificultad) {
       min = 10; max = 99;
       break;
     case 3:
-      min = 100; max = 999;
+      min = 10; max = 999;
       break;
     default:
       min = 1; max = 9;
